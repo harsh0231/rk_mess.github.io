@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RKMess Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background and Basic Setup */
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f3f4f6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #ffb347;
+            color: #fff;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 1000px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        /* Food Section */
+        .menu-section {
+            width: 100%;
+            max-width: 1000px;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-section h2 {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .menu img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .menu img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Owner Section */
+        .owner-section {
+            text-align: center;
+            padding: 30px;
+            background-color: #ffb347;
+            color: #fff;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 1000px;
+            margin-top: 30px;
+        }
+
+        .owner-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .owner img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            padding: 10px;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>RKMess</h1>
+        <p>Your go-to place for delicious home-style meals</p>
+    </header>
+
+    <!-- Food Section -->
+    <section class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu">
+            <img src="WhatsApp Image 2024-11-03 at 7.02.41 PM.jpeg" alt="Food Image 1">
+            <img src="WhatsApp Image 2024-11-03 at 7.02.41 PM (1).jpeg" alt="Food Image 2">
+            <img src="WhatsApp Image 2024-11-03 at 7.02.42 PM (1).jpeg" alt="Food Image 3">
+            <img src="WhatsApp Image 2024-11-03 at 7.02.42 PM (2).jpeg" alt="Food Image 4">
+            <img src="WhatsApp Image 2024-11-03 at 7.02.43 PM.jpeg" alt="Food Image 5">
+        </div>
+    </section>
+    
+    <!-- Owner Section -->
+    <section class="owner-section">
+        <h2>About the Owner</h2>
+        <img src="WhatsApp Image 2024-11-03 at 7.02.44 PM.jpeg" alt="Owner Photo">
+        <p style="margin-top: 10px;">Welcome to RKMess, where we take pride in serving fresh, tasty meals made with love.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2024 RKMess. All rights reserved.
+    </footer>
+</body>
+</html>
